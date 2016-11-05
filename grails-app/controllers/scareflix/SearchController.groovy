@@ -28,7 +28,11 @@ class SearchController {
             def text = ("curl " + feedUrl).execute().text
             if (!text.equals("")) {
                 resultsList = new JsonSlurper().parseText(text)
-                foundResults = true
+
+                // Check if there were any results
+                if (resultsList.size() > 0) {
+                    foundResults = true
+                }
             }
         }
 

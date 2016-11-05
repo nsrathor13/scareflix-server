@@ -6,6 +6,8 @@ grails:
     spring:
         transactionManagement:
             proxies: false
+server:
+    port: 9999
 info:
     app:
         name: '@info.app.name@'

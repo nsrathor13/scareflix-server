@@ -27,7 +27,7 @@
                     <ul>
                         <g:each in="${resultsList}" var="movie">
                             <li>
-                                <a href="movie/${movie.movie_id}">
+                                <a href="movie?id=${movie.movie_id}">
                                     ${movie.movie_title}
                                 </a>
                             </li>

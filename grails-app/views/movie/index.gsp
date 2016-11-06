@@ -26,6 +26,16 @@
                         <li><b>Year:</b> ${movieInfo.movie_year}</li>
                         <li><b>Rating:</b> ${movieInfo.movie_rating} / 10</li>
                         <li><b>Director:</b> ${movieInfo.movie_director}</li>
+                        <g:if test="${foundActors}">
+                            <li>
+                                <b>Actors:</b>
+                                <ul>
+                                    <g:each in="${actorInfo}" var="actor">
+                                        <li>${actor.actor_name}</li>
+                                    </g:each>
+                                </ul>
+                            </li>
+                        </g:if>
                     </ul>
                 </g:if>
                 <g:else>

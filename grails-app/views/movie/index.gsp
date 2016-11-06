@@ -36,6 +36,20 @@
                                 </ul>
                             </li>
                         </g:if>
+                        <g:if test="${foundRelatedMovies}">
+                            <li>
+                                <b>Related Movies:</b>
+                                <ul>
+                                    <g:each in="${relatedMovies}" var="movie">
+                                        <li>
+                                            <a href="/movie?id=${movie.movie_id}">
+                                                ${movie.movie_title} (${movie.movie_year})
+                                            </a>
+                                        </li>
+                                    </g:each>
+                                </ul>
+                            </li>
+                        </g:if>
                     </ul>
                 </g:if>
                 <g:else>

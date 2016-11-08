@@ -36,6 +36,16 @@
                                 </ul>
                             </li>
                         </g:if>
+                        <g:if test="${foundGenres}">
+                            <li>
+                                <b>Genres:</b>
+                                <ul>
+                                    <g:each in="${genreInfo}" var="genre">
+                                        <li>${genre.genre_name}</li>
+                                    </g:each>
+                                </ul>
+                            </li>
+                        </g:if>
                         <g:if test="${foundRelatedMovies}">
                             <li>
                                 <b>Related Movies:</b>

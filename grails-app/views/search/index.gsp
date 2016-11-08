@@ -35,7 +35,9 @@
                     </ul>
                 </g:if>
                 <g:else>
-                    <p>No results found.</p>
+                    <div class="alert alert-danger" role="alert">
+                        <p>No results found.</p>
+                    </div>
                 </g:else>
             </div>
 

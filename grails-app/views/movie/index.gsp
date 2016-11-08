@@ -63,7 +63,9 @@
                     </ul>
                 </g:if>
                 <g:else>
-                    <p>Movie not found.</p>
+                    <div class="alert alert-danger" role="alert">
+                        <p>Movie not found.</p>
+                    </div>
                 </g:else>
             </div>
 
